@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES6",            // Código compatible con navegadores modernos
+    "module": "ES6",            // Para usar import/export si quieres
+    "strict": true,             // Recomendado para TypeScript
+    "outDir": "./dist",         // Carpeta donde se generará main.js
+    "esModuleInterop": true,    // Para importar módulos comunes si los usas
+    "sourceMap": true           // Opcional: genera main.js.map para depuración
+  },
+  "include": ["**/*.ts"]        // Cualquier archivo TypeScript
+}
