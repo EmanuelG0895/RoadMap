@@ -4,17 +4,6 @@
  * - Muestra ejemplos de creación de todas las estructuras soportadas por defecto
  *   en tu lenguaje.
  * - Utiliza operaciones de inserción, borrado, actualización y ordenación.
- *
- * DIFICULTAD EXTRA (opcional):
- * Crea una agenda de contactos por terminal.
- * - Debes implementar funcionalidades de búsqueda, inserción, actualización
- *   y eliminación de contactos.
- * - Cada contacto debe tener un nombre y un número de teléfono.
- * - El programa solicita en primer lugar cuál es la operación que se quiere realizar,
- *   y a continuación los datos necesarios para llevarla a cabo.
- * - El programa no puede dejar introducir números de teléfono no numéricos y con más
- *   de 11 dígitos (o el número de dígitos que quieras).
- * - También se debe proponer una operación de finalización del programa.
  */
 //Array mutable y orderable
 const arr = [1, 2, 3];
@@ -39,7 +28,27 @@ arr.sort((a, b) => b - a);
 const agenda = [
     {
         id: 0,
-        nombreUsuario: "Usuario",
+        nombreUsuario: "usuario de prueba",
+        numeroTelefono: 1234567890,
+    },
+    {
+        id: 1,
+        nombreUsuario: "usuario de prueba",
+        numeroTelefono: 1234567890,
+    },
+    {
+        id: 2,
+        nombreUsuario: "usuario de prueba",
+        numeroTelefono: 1234567890,
+    },
+    {
+        id: 3,
+        nombreUsuario: "usuario de prueba",
+        numeroTelefono: 1234567890,
+    },
+    {
+        id: 4,
+        nombreUsuario: "usuario de prueba",
         numeroTelefono: 1234567890,
     },
 ];
@@ -84,7 +93,17 @@ do {
             }
             break;
         case "3":
-            prompt("Búsqueda de contactos");
+            for (let i = 0; i < agenda.length; i++) {
+                console.log(i, agenda[i]);
+            }
+            let contactoSeleccionado = prompt("selecciona un contacto para modificar");
+            let nombre = prompt("Escriba el nuevo nombre de usuario");
+            let modificacionDeUsaurio = {
+                id: Number(contactoSeleccionado),
+                nombreUsuario: "usuariop",
+                numeroTelefono: 1234567890,
+            };
+            agenda[Number(contactoSeleccionado)] = modificacionDeUsaurio;
             break;
         case "4":
             prompt("Búsqueda de contactos");
@@ -96,4 +115,4 @@ do {
             break;
     }
 } while (tareaTerminada);
-//# sourceMappingURL=estructurasDeDatos.js.map
+//# sourceMappingURL=Ejercicio03.js.map

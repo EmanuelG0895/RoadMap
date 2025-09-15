@@ -1,18 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Road Map</title>
 </head>
 
-<body>
-  <h1>TypeScript</h1>
-  <!-- <script type="module" src="./dist/sintaxisVariablesTiposDatosHolaMundo.js"></script> -->
-  <!-- <script type="module" src="./dist/OperadoresEstructurasDeControl.js"></script> -->
-  <!-- <script type="module" src="./dist/funcionesyAlcance.js"></script> -->
-  <script type="module" src="./dist/estructurasDeDatos.js"></script>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <script type="module" src="/dist/prueba.js"></script>
+
+  <header class="bg-white shadow-md py-4 px-6 md:px-12 fixed top-0 w-full z-50">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">Road Map</div>
+      <ul class="flex space-x-6">
+        <li><a href="#inicio" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Inicio</a></li>
+        <li><a href="#roadmap" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Road Map</a>
+        </li>
+        <li><a href="#contacto" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto mt-20 p-6 md:p-12">
+    <section id="inicio"
+      class="bg-white p-8 md:p-16 rounded-xl shadow-lg flex flex-col md:flex-row items-center justify-between mb-12">
+      <div class="">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-4">Road Map profesional</h1>
+        <p class="text-lg text-gray-600 mb-6">Esta pagina esta pensada para compartir mis conocimientos en TypeScript
+          por medio del siguiente roadmap, el cual fue creado por <a class="text-blue-600"
+            href="https://moure.dev/">Brais Moure (MoureDev).</a> El objetivo de esta pagina es unicamente compartir
+          mis soluciones a cada uno de los problemas que el mismo planteo y los comparto a continuacion</p>
+        <a href="https://retosdeprogramacion.com/roadmap"
+          class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">Repo
+          Emanuel</a>
+        <a href="https://retosdeprogramacion.com/roadmap"
+          class="inline-block bg-gray-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-700 transition-colors duration-300">Repo
+          MoureDev</a>
+      </div>
+
+    </section>
+
+    <section id="roadmap" class="mb-12">
+      <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">Road Map de Aprendizaje de Programación</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Fundamentos</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li><strong>Sintaxis y variables:</strong> Aprende la base de cualquier lenguaje.</li>
+            <li><strong>Estructuras de control:</strong> Domina los bucles y condicionales.</li>
+            <li><strong>Funciones:</strong> Organiza tu código de manera eficiente.</li>
+            <li><strong>Estructuras de datos:</strong> Trabaja con listas, arrays y colecciones.</li>
+            <li><strong>Cadenas de caracteres:</strong> Manipula texto como un profesional.</li>
+            <li><strong>Recursividad:</strong> Resuelve problemas complejos con funciones que se llaman a sí mismas.
+            </li>
+          </ul>
+        </article>
+
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Programación Orientada a Objetos (POO)</h3>
+          <p class="text-gray-700">Aprende a modelar el mundo real en tu código con clases, objetos, herencia y
+            polimorfismo.</p>
+        </article>
+
+        <article class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+          <h3 class="text-2xl font-semibold text-blue-600 mb-4">Conceptos Avanzados</h3>
+          <p class="text-gray-700">Próximamente contenido sobre manejo de memoria, concurrencia, manejo de errores
+            avanzados, etc.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-gray-900 text-white py-8 mt-12">
+    <div class="container mx-auto text-center">
+      <p class="mb-4">&copy; 2025 Road Map de Programación. Todos los derechos reservados.</p>
+      <div class="space-x-6">
+        <a href="mailto:info@roadmap.com" class="hover:underline">Contacto</a>
+        <a href="#" class="hover:underline">Redes Sociales</a>
+      </div>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>

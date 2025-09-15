@@ -1,0 +1,46 @@
+/* themes.css */
+
+/* Define the base theme (light mode) using custom properties */
+:root {
+  --color-background: #ffffff;
+  --color-text: #1f2937;
+  --color-primary: #3b82f6; /* A shade of blue */
+  --color-secondary: #60a5fa; /* A lighter blue */
+  --color-clifford: #da373d;
+}
+
+/* Dark mode theme. These styles will override the light theme when the .dark class is applied to the body. */
+body.dark {
+  --color-background: #1f2937;
+  --color-text: #f3f4f6;
+  --color-primary: #60a5fa;
+  --color-secondary: #93c5fd;
+}
+
+/* General styles using the custom properties */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text);
+}
+
+.text-clifford {
+  color: var(--color-clifford);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f2937;
+    color: #f3f4f6;
+  }
+}

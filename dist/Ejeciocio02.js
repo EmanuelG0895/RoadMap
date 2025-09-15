@@ -70,4 +70,4 @@ function reto(a, b) {
     return suma.length;
 }
 console.log("numero de veces que se ah impreso el numero en lugar de textos", reto("a", "b"));
-//# sourceMappingURL=funcionesyAlcance.js.map
+//# sourceMappingURL=Ejeciocio02.js.map
