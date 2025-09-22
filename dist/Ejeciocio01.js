@@ -1,7 +1,4 @@
 "use strict";
-/***********************
-operadores aritméticos
-***********************/
 //suma
 const suma = 3 + 3;
 console.log("Suma:", suma);

@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES6",            // Código compatible con navegadores modernos
     "module": "ES6",            // Para usar import/export si quieres
+    "lib": ["ES2019", "DOM"],
     "strict": true,             // Recomendado para TypeScript
     "outDir": "./dist",         // Carpeta donde se generará main.js
     "esModuleInterop": true,    // Para importar módulos comunes si los usas
