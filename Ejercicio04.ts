@@ -111,14 +111,7 @@ function isPalindromo(palindromo: string): boolean {
 
 function isIsograma(isograma: string) {
   let normalizedString = isograma.toLowerCase().replace(/[^a-z0-9]/g, "");
-  let istograma = true;
-  for (let i = 0; i < normalizedString.length; i++) {
-    let element = normalizedString[i];
-    if (element !== element) {
-      return !istograma;
-    }
-  }
-  return true;
+  
 }
 
 function isAnagrama(s1: string, s2: string) {
